@@ -1,0 +1,223 @@
+    1  exit
+    2  vim hosts
+    3  mkdir playbook
+    4  cd playbook/
+    5  vim helloplayboom.yml
+    6  mv helloplayboom.yml helloplaybook.yaml
+    7  ls
+    8  mv helloplaybook.yaml helloansible.yaml
+    9  ansible-playbook helloansible.yaml 
+   10  ls
+   11  vim ../ansible.cfg 
+   12  ansible-playbook helloansible.yaml 
+   13  ls /root/.ssh/
+   14  cat /root/.ssh/known_hosts 
+   15  ssh root@192.168.99.20
+   16  chmod 600 ~/.ssh/id_rsa 
+   17  ssh root@192.168.99.20
+   18  ansible-playbook helloansible.yaml 
+   19  ansible-playbook helloansible.yaml -v
+   20  ansible-playbook helloansible.yaml -vvv
+   21  ansible-playbook helloansible.yaml -vvv > errolog
+   22  ls
+   23  vim errolog 
+   24  ansible-playbook helloansible.yaml 
+   25  vim helloansible.yaml 
+   26  ansible-playbook helloansible.yaml 
+   27  vim helloansible.yaml 
+   28  ansible-playbook helloansible.yaml 
+   29  vim helloansible.yaml 
+   30  ansible-playbook helloansible.yaml 
+   31  vim nginx.yaml
+   32  ls
+   33  ansible-playbook nginx.yaml 
+   34  vim nginx.yaml
+   35  ansible-playbook nginx.yaml 
+   36  vim nginx.yaml
+   37  ansible-playbook nginx.yaml 
+   38  vim nginx.yaml
+   39  ansible-playbook -e 'hosts=all' nginx.yaml 
+   40  vim nginx.yaml
+   41  ansible-playbook -e 'hosts=all' nginx.yaml 
+   42  vim nginx.yaml
+   43  ansible-playbook -e 'hosts=all' nginx.yaml 
+   44  vim nginx.yaml
+   45  ssh 192.168.99.30
+   46  vim nginx.yaml
+   47  cp  nginx.yaml  removenginx.yaml
+   48  ls]
+   49  ls
+   50  vim removenginx.yaml 
+   51  ansible-playbook removenginx.yaml 
+   52  vim removenginx.yaml 
+   53  ansible-playbook removenginx.yaml 
+   54  service nginx status
+   55  ip a
+   56  ssh 192.168.99.30
+   57  ssh 192.168.99.10
+   58  vim removenginx.yaml 
+   59  vim nginx.yaml 
+   60  vim install_httpd.yaml
+   61  ansible install_httpd.yaml 
+   62  vim install_httpd.yaml
+   63  ansible install_httpd.yaml 
+   64  ansible-playbook install_httpd.yaml 
+   65  vim install_httpd.yaml
+   66  ansible-playbook install_httpd.yaml 
+   67  vim install_httpd.yaml
+   68  ansible-playbook install_httpd.yaml 
+   69  vim install_httpd.yaml
+   70  ansible-playbook install_httpd.yaml 
+   71  vim install_httpd.yaml
+   72  ansible-playbook install_httpd.yaml 
+   73  vim install_httpd.yaml
+   74  ansible-playbook install_httpd.yaml 
+   75  ssh 192.168.99.30
+   76  vim install_httpd.yaml
+   77  echo '<?  <? phpinfo();
+   78  ls
+   79  echo "<? phpinfo (); >" index.php
+   80  ls
+   81  echo '<? phpinfo (); >' index.php
+   82  vim index.php
+   83  ls
+   84  vim install_httpd.yaml
+   85  ansible-playbook install_httpd.yaml 
+   86  ls
+   87  vim index.php 
+   88  ansible-playbook install_httpd.yaml 
+   89  vim install_httpd.yaml
+   90  ssh 192.168.99.30
+   91  vim install_httpd.yaml
+   92  ansible-playbook install_httpd.yaml 
+   93  ssh 192.168.99.30
+   94  vim install_httpd.yaml
+   95  head hosts
+   96  head hots
+   97  ansible docker -m setup
+   98  docker run hell0-world
+   99  docker run hello-world
+  100  docker images
+  101  docker search apache
+  102  docker pull httpd
+  103  docker pull openshift
+  104  docker search  open
+  105  docker ps
+  106  docker ps -a
+  107  docker rm hello-world
+  108  docker rm 39f1c146b68e
+  109  docker images
+  110  docker run hello-world
+  111  docker ps -a
+  112  docker ps -aq
+  113  docker rm $(docker ps -aq)
+  114  docker ps -a
+  115  history
+  116  docker rmi hello-world
+  117  docker image
+  118  docker images
+  119  docker run -ti httpd
+  120  docker rm $(docker ps -qa)
+  121  docker run -dti --name apache httpd
+  122  docker ps
+  123  docker exec -ti apache bash
+  124  docker ps
+  125  docker inspect apache
+  126  docker stop apache
+  127  docker rm apache
+  128  history
+  129  docker run -dti --name apache -p 8080:80 httpd
+  130  curl 127.0.0.1:8080
+  131  docker run -dti alpine sh
+  132  docker images
+  133  docker ps
+  134  docker attach festive_einstein
+  135  docker ps
+  136  docker run -ti alpine sh
+  137  docker ps
+  138  docker attach 343c83cdab89 
+  139  docker ps
+  140  docker search open
+  141* docker run -ti 
+  142  docker ps
+  143  cd ~
+  144  vim teru.html
+  145  ls
+  146  curl teru.html 
+  147  mv teru.html teru.php
+  148  curl teru.php 
+  149  curl teru.php teru.html
+  150  ls
+  151  mv teru.php teru.html
+  152  docker cp teru.html apache:/usr/local/apache2/htdocs
+  153  docker cp teru.html apache:/usr/local/apache2/htdocs/
+  154  docker ps
+  155  docker run -dti --name apache -p 8080:81 httpd
+  156  docker run -dti --name apache2 -p 8080:81 httpd
+  157  docker ps
+  158  docker run -dti --name apache01 -p 8080:81 httpd
+  159  docker run -dti -p 8080:80 httpd
+  160  docker run -dti --name apache2-p 8081:80 httpd
+  161  docker run -dti --name apache2 -p 8081:80 httpd
+  162  docker ps
+  163  docker images
+  164  wget http://agilmanifesto.org/
+  165  wget http://agilemanifesto.org/
+  166  ls
+  167  mkdir html
+  168  mv *.html html/
+  169  ls
+  170  cd html/
+  171  ls
+  172* docker 
+  173* docker 
+  174  docker pull mariadb
+  175  docker run -dti --name banco1 -p 33306:3306 -v banco:/var/lib/mysql -e MYSQL_ROOT_PASSWORD=devops -e MYSQL_USER=bruna -e MYSQL_DATABASE=infra_agil mariadb
+  176  apt-get install -y mysql-client
+  177  docker volume ls
+  178  mysql -h 127.0.0.1 -P 33306 -u bruna -p4linux infra_agil
+  179  mysql -h 127.0.0.1 -P 33306 -u bruna -p4linux infra_agil]
+  180  mysql -h 127.0.0.1 -P 33306 -u bruna -p4linux infra_agil
+  181  docker stop banco1
+  182  docker run -dti --name banco1 -p 33306:3306 -v banco:/var/lib/mysql -e MYSQL_ROOT_PASSWORD=devops -e MYSQL_USER=bruna -e MYSQL_PASSWORD=4LINUX  MYSQL_DATABASE=infra_agil mariadb
+  183  docker run -dti --name banco1 -p 33306:3306 -v banco:/var/lib/mysql -e MYSQL_ROOT_PASSWORD=devops -e MYSQL_USER=bruna -e MYSQL_PASSWORD=4LINUX  -e MYSQL_DATABASE=infra_agil mariadb
+  184  docker rm -f banco1
+  185  docker run -dti --name banco1 -p 33306:3306 -v banco:/var/lib/mysql -e MYSQL_ROOT_PASSWORD=devops -e MYSQL_USER=bruna -e MYSQL_PASSWORD=4LINUX  -e MYSQL_DATABASE=infra_agil mariadb
+  186  mysql -h 127.0.0.1 -P 33306 -u bruna -p4linux infra_agil
+  187  mysql -h 127.0.0.1 -P 33306 -u bruna -p4LINUX infra_agil
+  188  docker stop banco1
+  189  docker run -dti --name banco1 -p 33306:3306 -v banco:/var/lib/mysql -e MYSQL_ROOT_PASSWORD=devops -e MYSQL_USER=bruna -e MYSQL_PASSWORD=4linux -e MYSQL_DATABASE=infra_agil mariadb
+  190  docker rm -f banco1
+  191  docker run -dti --name banco1 -p 33306:3306 -v banco:/var/lib/mysql -e MYSQL_ROOT_PASSWORD=devops -e MYSQL_USER=bruna -e MYSQL_PASSWORD=4linux -e MYSQL_DATABASE=infra_agil mariadb
+  192  mysql -h 127.0.0.1 -P 33306 -u bruna -p4linux infra_agil
+  193  docker stop banco1
+  194  docker rm -f banco1
+  195  docker volume rm banco
+  196  docker rm -f banco1
+  197  docker run -dti --name banco1 -p 33306:3306 -v banco:/var/lib/mysql -e MYSQL_ROOT_PASSWORD=devops -e MYSQL_USER=bruna -e MYSQL_PASSWORD=4linux -e MYSQL_DATABASE=infra_agil mariadb
+  198  mysql -h 127.0.0.1 -P 33306 -u bruna -p4linux infra_agil
+  199  docker rm -f banco1
+  200  docker stop banco1
+  201  docker ps
+  202  docker volume rm banco
+  203  ps -a
+  204  docker ps -a
+  205  docker rm -f banco1
+  206  docker volume rm banco
+  207  docker system prume -f
+  208  docker system prune -f
+  209  docker volume rm banco
+  210  docker run -dti --name banco1 -p 33306:3306 -v banco:/var/lib/mysql -e MYSQL_ROOT_PASSWORD=devops -e MYSQL_USER=bruna -e MYSQL_PASSWORD=4linux -e MYSQL_DATABASE=infra_agil mariadb
+  211  mysql -h 127.0.0.1 -P 33306 -u bruna -p4linux infra_agil
+  212* docker run -dti --name banco2 -p 33307:3306 -v banco:/var/lib/mysql -e MYSQL_ROOT_PASSWORD=devops -e MYSQL_USER=bruna -e MYSQL_PASSWORD=4linux -e MYSQL_DATABASE=infra_agil mariadbDOCKER
+  213  mysql -h 127.0.0.1 -P 33307 -u bruna -p4linux infra_agil
+  214  docker volume rm -f $(docker ps qa)
+  215  docker rm -f $(docker ps qa)
+  216  docker rm -f $(docker ps -qa)
+  217  docker run -dti -p 8080:80 -v /root/html/:/usr/local/apache2/htdocs/ --name apache1 httpd
+  218  docker run -dti -p 8181:80 -v /root/html/:/usr/local/apache2/htdocs/ --name apache2 httpd
+  219  docker ps
+  220  docker imagens
+  221  docker images
+  222  docker ps
+  223  history >> history.txt
